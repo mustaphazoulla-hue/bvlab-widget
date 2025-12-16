@@ -1,84 +1,95 @@
-:root {
-  --primary: #2ecc71; /* 💚 couleur principale */
-  --primary-dark: #27ae60;
-  --bg-light: #f6fff8;
-  --bot-bg: #e8fff0;
-  --user-text: white;
-  --bot-text: #0c3d1a;
-}
-
 .container {
-  font-family: Arial;
   width: 360px;
-  height: 500px;
+  height: 520px;
+  background: #0b0f19;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
   overflow: hidden;
-  background: white;
-  border: 1px solid #d7f5e4;
+  font-family: Inter, system-ui, sans-serif;
 }
 
+/* HEADER */
 .header {
-  padding: 12px;
-  background: var(--primary);
+  background: linear-gradient(180deg, #0b5cff, #4b8bff);
   color: white;
-  font-weight: bold;
+  padding: 14px;
   text-align: center;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
+/* MESSAGES ZONE */
 .messages {
   flex: 1;
   padding: 12px;
   overflow-y: auto;
-  background: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(180deg, #0b0f19, #020617);
 }
 
+/* BULLE UTILISATEUR */
 .msgUser {
-  background: var(--primary);
-  color: var(--user-text);
-  padding: 8px 12px;
-  border-radius: 16px;
-  margin: 6px 0;
-  max-width: 80%;
   align-self: flex-end;
+  background: #0b5cff;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 16px 16px 4px 16px;
+  max-width: 75%;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
+/* BULLE BOT */
 .msgBot {
-  background: var(--bot-bg);
-  color: var(--bot-text);
-  padding: 8px 12px;
-  border-radius: 16px;
-  margin: 6px 0;
-  max-width: 80%;
   align-self: flex-start;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 10px 14px;
+  border-radius: 16px 16px 16px 4px;
+  max-width: 75%;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
+/* INPUT */
 .inputArea {
   display: flex;
   gap: 8px;
-  padding: 12px;
-  border-top: 1px solid #d7f5e4;
+  padding: 10px;
+  border-top: 1px solid #1f2933;
+  background: #020617;
 }
 
 .input {
   flex: 1;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #c7eedd;
+  background: #020617;
+  border: 1px solid #1f2933;
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: white;
+  font-size: 13px;
+  outline: none;
 }
 
+.input::placeholder {
+  color: #9ca3af;
+}
+
+/* BOUTON */
 .sendBtn {
-  background: var(--primary);
-  color: white;
+  background: #22c55e;
   border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
-  font-weight: bold;
+  color: #022c22;
 }
 
 .sendBtn:hover {
-  background: var(--primary-dark);
+  background: #16a34a;
 }

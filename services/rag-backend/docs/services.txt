@@ -1,0 +1,9 @@
+BV Lab propose les services suivants :
+- Consulting en data
+- Conseil en développement d'IA
+- R&D Consulting
+- Support et maintenance des solutions IA
+- Preuve de concept (POC) pour projets IA
+- Développement de stratégies IA
+- Formation et renforcement des compétences en IA
+- Évaluation de la maturité IA des entreprises

@@ -1,0 +1,9 @@
+Exemples de projets ou cas d'utilisation présentés par BV Lab :
+- Fraud Detection
+- VerbatiX
+- BTC Predictor
+- Social Media Monitoring
+- Web Service Real Time Prediction
+- Shipping Fees Optimizer
+- Delivery Success Predictor
+- Geolocation Hub Detection

@@ -5,7 +5,7 @@ export async function POST(request) {
     const userMessage = (message || "").toString().trim();
 
     // 2. Envoyer la question au backend Python (RAG)
-    const response = await fetch("http://localhost:8000/rag", {
+    const response = await fetch("http://127.0.0.1:8000/rag", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
